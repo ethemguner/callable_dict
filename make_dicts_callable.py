@@ -2,8 +2,7 @@ class CallableDict:
     """Makes Python dictionaries callable by their keys."""
 
     def __init__(self, raw_dict):
-        self.raw_dict = raw_dict
-        self.initialize_attributes(self.raw_dict, self)
+        self.initialize_attributes(raw_dict, self)
 
         @classmethod
         def initialize_attributes(cls, raw_dict, current_obj):
