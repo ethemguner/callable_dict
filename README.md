@@ -23,19 +23,19 @@ callable_dict = CallableDict(usual_dict)
 print(callable_dict.a)
 # 1
 
-print(callable_dict.a.b)
+print(callable_dict.b)
 # <__main__.CallableDict at 0x106202220>
 
-print(callable_dict.a.b.inner_key)
+print(callable_dict.b.inner_key)
 # 2
 
-print(callable_dict.a.b.inner_key2)
+print(callable_dict.b.inner_key2)
 # 3
 
-print(callable_dict.a.b.inner_key3)
+print(callable_dict.b.inner_key3)
 # <__main__.CallableDict object at 0x106bcd2b0>
 
-print(callable_dict.my_key.b.inner_key3.very_inner_key)
+print(callable_dict.b.inner_key3.very_inner_key)
 # 4
 
 print(callable_dict.c)
