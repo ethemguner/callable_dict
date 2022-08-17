@@ -38,6 +38,9 @@ print(callable_dict.b.inner_key3)
 print(callable_dict.b.inner_key3.very_inner_key)
 # 4
 
+print(callable_dict.b.inner_key3.very_inner_key2)
+# 5
+
 print(callable_dict.c)
 # [1, 2, 3, 4]
 ```
